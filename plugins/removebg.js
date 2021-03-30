@@ -20,7 +20,7 @@ const pipeline = promisify(stream.pipeline);
 const Language = require('../language');
 const Lang = Language.getString('removebg');
 
-Asena.addCommand({pattern: 'removebg ?(.*)', fromMe: true, desc: Lang.REMOVEBG_DESC}, (async (message, match) => {    
+Asena.addCommand({pattern: 'rmbg ?(.*)', fromMe: true, desc: Lang.REMOVEBG_DESC}, (async (message, match) => {    
     if (message.reply_message === false || message.reply_message.image === false) return await message.sendMessage(Lang.NEED_PHOTO);
     if (Config.RBG_API_KEY === false) return await message.sendMessage(Lang.NO_API_KEY);
     
@@ -49,6 +49,6 @@ Asena.addCommand({pattern: 'removebg ?(.*)', fromMe: true, desc: Lang.REMOVEBG_D
 		fs.createWriteStream('rbg.png')
     );
     
-    await message.sendMessage(fs.readFileSync('rbg.png'), MessageType.document, {filename: 'WhatsAsena.png', mimetype: Mimetype.png});
+    await message.sendMessage(fs.readFileSync('rbg.png'), MessageType.document, {filename: 'Atull.png', mimetype: Mimetype.png});
     await load.delete();
 }));
