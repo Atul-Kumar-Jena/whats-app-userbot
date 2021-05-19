@@ -2,8 +2,6 @@
 
 <b>Deploy to heroku</b>
 
-## <b>Waise kya dekhne aaye ho.. Do not deploy this app until I say to..cuz still I am resolving some bugs..<\b>
-
-Jisko dekho chala aata hai mu utha Ke..programming aaye ya na aaye
+## Now you can deploy🙂.. Only if you know how to..! 
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/hellboi-atul/whats-app-userbot)
